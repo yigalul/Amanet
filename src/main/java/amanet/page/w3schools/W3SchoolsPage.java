@@ -7,8 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class W3SchoolsPage extends BasePage {
-    @FindBy(xpath = "/table/tbody")
-    private WebElement table;
 
     public W3SchoolsPage(WebDriver driver) {
         super(driver);

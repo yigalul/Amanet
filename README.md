@@ -9,3 +9,4 @@ There are two main ways to execute the application.<br />
   2 - Using Intellij:<br />
       Execute the run configuration runner<br />
   <br />
+  In the end of the run AmanetReport.html file will be generated in the root directory.

@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Main Test Suite" verbose="5">
+    <test thread-count="4" name="Extent Report Test" parallel="classes">
+        <classes>
+            <class name="amanet.tests.seven.SevenHomeTest"/>
+            <class name="amanet.tests.w3schools.W3SchoolsTest"/>
+        </classes>
+    </test>
+</suite>

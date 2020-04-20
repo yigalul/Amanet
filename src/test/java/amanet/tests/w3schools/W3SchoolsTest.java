@@ -1,19 +1,19 @@
 package amanet.tests.w3schools;
 
 import amanet.page.w3schools.W3SchoolsPage;
-import amanet.tests.BaseTest;
+import amanet.tests.UIBaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class W3SchoolsTest extends BaseTest {
+public class W3SchoolsTest extends UIBaseTest {
 
     @Test
-    public void GetFromTable(){
+    public void getFromTable() {
         extentLogger = extent.createTest("GetFromTable", "Get From Table");
         W3SchoolsPage w3SchoolsPage = new W3SchoolsPage(this.driver);
-        WebElement customersTable = this.driver.findElement(By.id("customers"));
+        WebElement customersTable = this.driver.findElement(By.id("customerss"));
         String value = w3SchoolsPage.getTableCellText(
                 customersTable,
                 1,
@@ -25,7 +25,7 @@ public class W3SchoolsTest extends BaseTest {
     }
 
     @Test
-    public void VerifyFromTable(){
+    public void verifyFromTable() {
         extentLogger = extent.createTest("VerifyFromTable", "Verify From Table");
         W3SchoolsPage w3SchoolsPage = new W3SchoolsPage(this.driver);
         WebElement customersTable = this.driver.findElement(By.id("customers"));
@@ -47,7 +47,7 @@ public class W3SchoolsTest extends BaseTest {
     }
 
     @Test
-    public void GettingFromTableByXpath(){
+    public void GettingFromTableByXpath() {
         extentLogger = extent.createTest("GettingFromTableByXpath", "Getting From Table By Xpath");
         W3SchoolsPage w3SchoolsPage = new W3SchoolsPage(this.driver);
         WebElement customersTable = this.driver.findElement(By.id("customers"));

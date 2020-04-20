@@ -16,8 +16,10 @@ public class W3SchoolsPage extends BasePage {
 
     public String getTableCellText(WebElement table, int searchColumn,
                                    String searchText, int returnColumnText) {
-            for (int i = 2; i < 8; i++) {
-                String text = table.findElement(By.xpath("//tbody/tr[" + i + "]/td[" + searchColumn + "]")).getText();
+
+        for (int i = 2; i < 8; i++) {
+            WebElement element = table.findElement(By.xpath("//tbody/tr[" + i + "]/td[" + searchColumn + "]"));
+            String text = element.getText();
                 if (text.equals(searchText)) {
                     return table.findElement(By.xpath("//tbody/tr[" + i + "]/td[" + returnColumnText + "]")).getText();
                 }

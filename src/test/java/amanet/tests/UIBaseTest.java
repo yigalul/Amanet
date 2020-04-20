@@ -1,6 +1,5 @@
 package amanet.tests;
 
-import amanet.page.BasePage;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -8,22 +7,21 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.google.gson.Gson;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
-public abstract class BaseTest {
+public abstract class UIBaseTest {
     protected WebDriver driver;
-    protected Logger logger = LoggerFactory.getLogger(BaseTest.class);
+    protected Logger logger = LoggerFactory.getLogger(UIBaseTest.class);
     protected static ExtentTest extentLogger;
     protected static ExtentReports extent;
     protected static ExtentHtmlReporter reporter;
-
 
     @BeforeMethod
     public void setup() {

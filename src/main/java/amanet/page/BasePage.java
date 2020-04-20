@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 public abstract class BasePage {
     protected static final int TIMEOUT_IN_SECONDS = 30;

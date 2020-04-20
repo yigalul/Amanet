@@ -2,13 +2,13 @@ package amanet.tests.seven;
 
 import amanet.enums.LanguagesEnum;
 import amanet.page.seven.SevenHomPage;
-import amanet.tests.BaseTest;
+import amanet.tests.UIBaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class SevenHomeTest extends BaseTest {
+public class SevenHomeTest extends UIBaseTest {
     @Test
     public void firstTest() {
         extentLogger = extent.createTest("First Test", "Check Languages");
